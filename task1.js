@@ -124,5 +124,13 @@ while ( typeof Fruit[k] == 'string')
 
 */
 
-
+let MyNewArray = [12,23,43,11,9,2,121,90] ; 
+let newLength =MyNewArray.length ; 
+let s=0;
+for (s ; s < newLength ; s++)
+{
+   if (MyNewArray[s]%2 == 0 && MyNewArray[s] > 31 ) {console.log(`Element is greater than provided value and is EVEN -> ${MyNewArray[s]}`)} ;
+   if (MyNewArray[s]%2 != 0 && MyNewArray[s] < 31 ) {console.log(`Element is less than provided value and is ODD-> ${MyNewArray[s]}`)} ;
+   
+}
 
