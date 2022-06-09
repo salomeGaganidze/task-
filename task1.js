@@ -26,7 +26,7 @@ console.log(Text) ;
 
 */
 
-let Mylist = ['John','Sam','Ann','Will','Andrew','Joseph','Lorelai','Amelie','Den' ,'SOKO'] ;
+let Mylist = ['John','Sam','Ann','Will','Andrew','Joseph','Lorelai','Amelie','Den' ] ;
 let MylistLength =  Mylist.length ;
 
 if (MylistLength%2 == 0) 
@@ -96,8 +96,8 @@ for ( i ; i< mySubject.length ; i++)
 
 }
 
-
-
+let result = `${Student.fullName} არის ${Student.age} წლის და მისი რუმმეითი არის : ${Student.roommate.fullName}` ;
+console.log(result); 
 /*
     Task 4 : 
         გვაქვს  მასივი : ["Banana", "Orange", "Apple", "Mango",2,12]
@@ -110,7 +110,7 @@ for ( i ; i< mySubject.length ; i++)
    let  k=0; 
 
    
-while ( typeof Fruit[k] == 'string') 
+while ( typeof (Fruit[k]) == 'string') 
 {
    console.log(Fruit[k]) ; 
    k++ ;
@@ -134,3 +134,4 @@ for (s ; s < newLength ; s++)
    
 }
 
+// END TASK 1 
