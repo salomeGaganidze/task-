@@ -250,8 +250,3 @@ function  gcd(a,b) {
   
   let r = checkIfEven(4);
   console.log(r) ; 
-  
-  
-  
-
-  
