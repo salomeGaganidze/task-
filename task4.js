@@ -56,7 +56,6 @@ Task 2 :
 მაგალითად 025468 უნდა დაგვიბრუნდეს როგორც 0-254-6-8
 */
 
- debugger ;
 function  myFunc (par) 
 
 
@@ -86,25 +85,28 @@ for (i=0 ; i <  k.length ; i ++ )
 
   console.log(container);
 
-    let result1 ;
-    result1 = container.reduce( (rss,el)=> {
-
-       if( el%2==0  &&  container [(container.indexOf(el)) +1]%2==0)
-        {
-               rss += `${el}`+ `-` 
-        return rss ;
-        }
-        else return rss+= `${el}`
-
-   } , '' )
+    let result1 ='';
     
+
+   for ( i = 0 ; i< container.length ; i ++ )
+  {
+
+       if (container[i]%2==0 && container[i+1] %2==0 )
+       {
+              result1+= `${container[i]}` + `-`
+              
+       }
+       else  result1 += `${container[i]}`
+
+  }
+
+
   return result1 ;
 } ;
 
 
- 
 
-let y = 2223445678;
+let y = 222344567804;
 let gs = myFunc(y)
 console.log(gs) ; 
  
