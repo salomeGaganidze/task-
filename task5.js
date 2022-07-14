@@ -20,7 +20,7 @@ class MyString
 constructor (text) 
 { 
    this.text=text ; 
-   let count = 0 ;
+   let count = 0  ;
    let concCount=0;
    let length =0 ;
    let array = [] ; 
